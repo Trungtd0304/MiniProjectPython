@@ -21,7 +21,7 @@ def blueSquare():
     B365D = float(entry5.get())
     B365A = float(entry6.get())
     predicted_Home=blueSquaremodelHome.predict([[B365H,B365D,B365A]])
-    lbl.config(text='Kết quả nhà cái Blue Square= '+str(predicted_Home))
+    lblb.config(text='Kết quả nhà cái Blue Square= '+str(predicted_Home))
 
 # Create a window
 win=Tk()
@@ -85,5 +85,7 @@ button2.grid(column=5,row=3)
 
 lbl=Label(win,text="", font=('Century 12 bold'))
 lbl.grid(row=4,sticky="w")
+lblb=Label(win,text="", font=('Century 12 bold'))
+lblb.grid(row=5,sticky="w")
 
 win.mainloop()
